@@ -1,0 +1,56 @@
+#configurar el workspace
+1. file -> save workspace as
+2. clik engranaje -> setting -> workspace -> workbeach -> apperance ->color theme
+
+#creacion del packag-json
+npm init 
+
+#instalacion de librerias pal back
+(comando para desintalar npm uninstall NOMBRE)
+npm i cors
+npm i morgan
+npm i express
+npm i mongoose (cambiar según persisitencia que maneje)
+npm i bcryptjs (para encriptar)
+npm i jsonwebtoken (pa' verificar token)
+
+npm i dotenv --save-dev  (sirve para manejar la configuracion) "la ejecutamos en modo desarrollo"
+npm i nodemon --save-dev (permite compilar el código) 
+
+#librerias que ayudan a programar mas rapido y facil 
+npm i @types/cors --save-dev (ayuda visualizar erroes)
+npm i @types/morgan --save-dev
+npm i @types/express --save-dev
+npm i @types/jsonwebtoken --save-dev
+npm i @types/bcryptjs --save-dev
+
+#agregar TypesCripy
+
+tsc --init(configurar el documento  tsconfig.json  que crear el comando
+crtl+f para buscar el aoutoDir y lo remplazamos por un "outDir": "./build",)
+
+#NO son librerias son Scrift  de ejecuición (para compilar y ejecutar)
+# ESTO VA EN EL PACKAGE.JSON  (simil al Pom)
+"dev": "nodemon build/index.js"
+"build": "tsc -w"
+
+# Create el cascaron mano
+1- se crea la carpeta src(source - recursos) en tu proyecto.
+2- dentro de la carpeta src se crean:
+src
+    -Configuracion
+    -entidades
+    -dao
+    -controlador
+    -esquema
+    -ruta
+    -middleware
+
+Por ultimo se genera el index.ts donde va el servidor
+
+#cuando pasan el codigo y agregar el node_,odulos
+npm i 
+
+#Crear cascaron front
+
+npx create-react-app profinalmintic --template typescript
